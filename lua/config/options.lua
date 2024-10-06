@@ -12,4 +12,5 @@ opt.autowrite = false
 opt.clipboard = ""
 opt.conceallevel = 0
 opt.ignorecase = false
+opt.cmdheight = 0
 --opt.spelllang = { "sv" }
