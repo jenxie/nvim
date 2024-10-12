@@ -5,6 +5,7 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
 vim.g.autoformat = false
+vim.g.lazyvim_picker = "fzf"
 
 local opt = vim.opt
 
@@ -12,5 +13,6 @@ opt.autowrite = false
 opt.clipboard = ""
 opt.conceallevel = 0
 opt.ignorecase = false
-opt.cmdheight = 0
---opt.spelllang = { "sv" }
+opt.colorcolumn = "80"
+opt.spelllang = { "en_us" }
+-- opt.spelllang = { "en_us,se_sv" }

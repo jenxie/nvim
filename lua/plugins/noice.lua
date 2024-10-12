@@ -2,10 +2,12 @@ return {
   "folke/noice.nvim",
   opts = {
     cmdline = {
-      enabled = false,
+      -- bottom line, similar to the classic cmdline
+      view = "cmdline",
     },
-    messages = {
-      enabled = false,
-    },
+    -- messages = {
+      -- simple popup instead of notify
+    --   view = "popup",
+    -- },
   },
 }
