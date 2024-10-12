@@ -35,9 +35,9 @@ rm -rf $HOME/.config/nvim/lazy-lock.json \
 ### Spellcheck files if downloaded
 
 ```bash
+# docs: https://neovim.io/doc/user/spell.html
 $HOME/.local/share/nvim/site/spell/
 
 # added good words with for example `zg` ends up in
-# docs: https://neovim.io/doc/user/spell.html
 $HOME/.config/nvim/spell/
 ```
