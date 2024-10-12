@@ -3,12 +3,7 @@
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
 
-## Added info
-
-You can browse or search LazyVim code in `$HOME/.local/share/nvim/lazy/`
-so that it's easier to find configurations to modify in `$HOME/.config/nvim/`
-The entire setup resides in `$HOME/.local/share/nvim/lazy/LazyVim/lua/lazyvim/`
-to inspect the LazyVim nvim configurations.
+## Additional notes
 
 ### Clone the repository
 
@@ -31,7 +26,10 @@ sudo apt install make gcc ripgrep unzip git xclip neovim
 ### Start from scratch but keep `$HOME/.config/nvim`
 
 ```bash
-rm -rf $HOME/.config/nvim/lazy-lock.json $HOME/.local/share/nvim $HOME/.local/state/nvim $HOME/.cache/nvim
+rm -rf $HOME/.config/nvim/lazy-lock.json \
+       $HOME/.local/share/nvim \
+       $HOME/.local/state/nvim \
+       $HOME/.cache/nvim
 ```
 
 ### Spellcheck files if downloaded

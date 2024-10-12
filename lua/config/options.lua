@@ -13,4 +13,5 @@ opt.clipboard = ""
 opt.conceallevel = 0
 opt.ignorecase = false
 opt.colorcolumn = "80"
-opt.spelllang = { "en_us,se_sv" }
+opt.spelllang = { "en_us" }
+-- opt.spelllang = { "en_us,se_sv" }
