@@ -29,7 +29,6 @@ require("lazy").setup({
     -- import/override with your plugins
     --{ import = "lazyvim.plugins.extras.lang.ansible" },
     --{ import = "lazyvim.plugins.extras.lang.docker" },
-    --{ import = "lazyvim.plugins.extras.lang.go" },
     --{ import = "lazyvim.plugins.extras.lang.helm" },
     --{ import = "lazyvim.plugins.extras.lang.java" },
     --{ import = "lazyvim.plugins.extras.lang.json" },
@@ -42,6 +41,7 @@ require("lazy").setup({
     --{ import = "lazyvim.plugins.extras.editor.mini-diff" },
     --{ import = "lazyvim.plugins.extras.coding.codeium" },
     { import = "lazyvim.plugins.extras.lang.markdown" },
+    --{ import = "lazyvim.plugins.extras.lang.go" },
     { import = "plugins" },
   },
   defaults = {

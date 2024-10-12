@@ -1,12 +1,13 @@
 return {
   {
-    -- nvim-treesitter is simple and easy way to use the interface for tree-sitter in Neovim
+    -- nvim-treesitter is simple way to use the interface for tree-sitter
     -- and to provide some basic functionality such as highlighting based on it
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
         "bash",
         "html",
+        "go",
         "javascript",
         "json",
         "lua",

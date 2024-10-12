@@ -12,5 +12,5 @@ opt.autowrite = false
 opt.clipboard = ""
 opt.conceallevel = 0
 opt.ignorecase = false
-opt.cmdheight = 0
---opt.spelllang = { "sv" }
+opt.colorcolumn = "80"
+opt.spelllang = { "en_us,se_sv" }
