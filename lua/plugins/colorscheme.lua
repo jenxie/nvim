@@ -6,7 +6,6 @@ return {
     opts = {
       style = "storm",
       transparent = true,
-      terminal_colors = true,
       styles = {
         comments = { italic = false },
         keywords = { italic = false },
