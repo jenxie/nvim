@@ -5,9 +5,9 @@ return {
       -- bottom line, similar to the classic cmdline
       view = "cmdline",
     },
-    messages = {
+    -- messages = {
       -- simple popup instead of notify
-      view = "popup",
-    },
+    --   view = "popup",
+    -- },
   },
 }

@@ -5,6 +5,7 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
 vim.g.autoformat = false
+vim.g.lazyvim_picker = "fzf"
 
 local opt = vim.opt
 
