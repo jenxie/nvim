@@ -23,6 +23,18 @@ sudo apt update
 sudo apt install make gcc ripgrep unzip git xclip neovim
 ```
 
+### Merge upstream changes
+
+```bash
+git remote add upstream https://github.com/LazyVim/starter.git
+git fetch upstream
+git merge upstream/main
+# solve the merge conflicts
+git add <the-files-with-solved-conflicts>
+git commit -am "merged upstream changes"
+git push
+```
+
 ### Start from scratch but keep `$HOME/.config/nvim`
 
 ```bash
