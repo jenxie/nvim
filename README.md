@@ -26,6 +26,7 @@ sudo apt install make gcc ripgrep unzip git xclip neovim
 ### Merge upstream changes
 
 ```bash
+# merge
 git remote add upstream https://github.com/LazyVim/starter.git
 git fetch upstream
 git merge upstream/main
@@ -33,6 +34,16 @@ git merge upstream/main
 git add <the-files-with-solved-conflicts>
 git commit -am "merged upstream changes"
 git push
+
+# rebase
+git remote add upstream https://github.com/LazyVim/starter.git
+git fetch upstream
+git rebase upstream/main
+# solve the merge conflicts
+git add <the-files-with-solved-conflicts>
+git rebase --continue
+git push origin main # if this doesn't work, use below else skip
+git push --force-with-lease origin main
 ```
 
 ### Start from scratch but keep `$HOME/.config/nvim`
