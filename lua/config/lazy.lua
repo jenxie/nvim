@@ -32,11 +32,11 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.mini-comment" },
     { import = "lazyvim.plugins.extras.dap.core" },
     { import = "lazyvim.plugins.extras.editor.fzf" },
-    { "junegunn/fzf", build = "./install --bin" },
-    {
-      "ibhagwan/fzf-lua",
-        optional = true,
-    },
+--    { "junegunn/fzf", build = "./install --bin" },
+--    {
+--      "ibhagwan/fzf-lua",
+--        optional = true,
+--    },
     { import = "lazyvim.plugins.extras.lang.ansible" },
     { import = "lazyvim.plugins.extras.lang.docker" },
     { import = "lazyvim.plugins.extras.lang.git" },
