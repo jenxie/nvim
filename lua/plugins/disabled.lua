@@ -7,11 +7,4 @@ return {
 
   -- disable the autopairing
   { "echasnovski/mini.pairs", enabled = false },
-
-  -- disable the dashboard
-  { "folke/snacks.nvim",
-    opts = {
-      dashboard = { enabled = false }
-    }
-  },
 }

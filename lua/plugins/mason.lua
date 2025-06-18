@@ -1,5 +1,4 @@
 return {
-  -- ensure Puppet Editor Services is installed
   {
     "williamboman/mason.nvim",
     opts = {
