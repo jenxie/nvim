@@ -62,3 +62,47 @@ vim.keymap.set("n", "<leader>wt", function()
 
   vim.api.nvim_set_current_win(cur_win) -- restore cursor
 end, { desc = "Toggle diff view" })
+
+-- vim.keymap.set("n", "<leader>on", "<cmd>ObsidianNew<CR>", { desc = "New note" })
+-- vim.keymap.set("n", "<leader>ot", "<cmd>ObsidianToday<CR>", { desc = "Today’s note" })
+-- vim.keymap.set("n", "<leader>of", "<cmd>ObsidianFollowLink<CR>", { desc = "Follow [[link]]" })
+-- vim.keymap.set("n", "<leader>os", "<cmd>ObsidianSearch<CR>", { desc = "Search notes" })
+-- vim.keymap.set("n", "<leader>ob", "<cmd>ObsidianBacklinks<CR>", { desc = "Backlinks" })
+-- local wk = require("which-key")
+--
+-- wk.add({
+--   -- Declare group under <leader>o
+--   {
+--     "<leader>o",
+--     group = "Obsidian",
+--     icon = "󱞁",
+--   },
+--   -- Keymaps
+--   {
+--     "<leader>on",
+--     function()
+--       if not vim.bo.modifiable then
+--         vim.cmd("enew")
+--       end
+--       vim.cmd("ObsidianNew")
+--     end,
+--     desc = "New note",
+--   },
+--   { "<leader>ot", "<cmd>ObsidianToday<CR>", desc = "Today’s note" },
+--   { "<leader>os", "<cmd>ObsidianSearch<CR>", desc = "Search notes" },
+--   { "<leader>ob", "<cmd>ObsidianBacklinks<CR>", desc = "Backlinks" },
+--   { "<leader>oo", "<cmd>ObsidianOpen<CR>", desc = "Open in Obsidian app" },
+-- })
+
+vim.keymap.set("n", "<leader>mp", function()
+  vim.cmd("w")
+  vim.cmd("!glow %")
+end, { desc = "Preview Markdown with Glow" })
+
+-- vim.keymap.set("n", "<leader>on", function()
+--   -- Skip if we're already in a modifiable buffer
+--   if not vim.bo.modifiable then
+--     vim.cmd("enew")
+--   end
+--   vim.cmd("ObsidianNew")
+-- end, { desc = "New Obsidian note" })

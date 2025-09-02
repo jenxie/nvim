@@ -15,12 +15,12 @@ git clone git@github.com:jenxie/nvim.git "$HOME/.config/nvim"
 
 ```bash
 # fedora
-sudo dnf install -y gcc make git ripgrep fd-find unzip neovim fzf
+sudo dnf install -y gcc make git ripgrep fd-find unzip neovim fzf glow
 
 # ubuntu
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update
-sudo apt install make gcc ripgrep unzip git xclip neovim
+sudo apt install make gcc ripgrep unzip git xclip neovim glow
 ```
 
 ### Merge upstream changes
