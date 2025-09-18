@@ -6,5 +6,5 @@ return {
   { "render-markdown.nvim", enabled = false },
 
   -- disable the autopairing
-  { "echasnovski/mini.pairs", enabled = false },
+  { "nvim-mini/mini.pairs", enabled = false },
 }
