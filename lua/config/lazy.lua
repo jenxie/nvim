@@ -32,11 +32,11 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.mini-comment" },
     { import = "lazyvim.plugins.extras.dap.core" },
     { import = "lazyvim.plugins.extras.editor.fzf" },
---    { "junegunn/fzf", build = "./install --bin" },
---    {
---      "ibhagwan/fzf-lua",
---        optional = true,
---    },
+    --    { "junegunn/fzf", build = "./install --bin" },
+    --    {
+    --      "ibhagwan/fzf-lua",
+    --        optional = true,
+    --    },
     { import = "lazyvim.plugins.extras.lang.ansible" },
     { import = "lazyvim.plugins.extras.lang.clangd" },
     { import = "lazyvim.plugins.extras.lang.docker" },
@@ -75,6 +75,9 @@ require("lazy").setup({
     enabled = false, -- check for plugin updates periodically
     notify = false, -- notify on update
   }, -- automatically check for plugin updates
+  rocks = {
+    enabled = false,
+  },
   performance = {
     rtp = {
       -- disable some rtp plugins
