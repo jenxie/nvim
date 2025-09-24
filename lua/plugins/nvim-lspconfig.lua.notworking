@@ -1,0 +1,33 @@
+return {
+  "neovim/nvim-lspconfig",
+  opts = {
+    servers = {
+      puppet = {
+        mason = false,
+        -- `gem install puppet-editor-services`
+        -- cmd = { vim.fn.expand("~") .. "/bin/puppet-languageserver", "--stdio" },
+        -- cmd = { vim.fn.expand("~") .. "/bin/puppet-languageserver", "--stdio", "--debug=/tmp/ls-puppet.log", "--puppet-settings=--confdir=/home/erogr/.cache/puppet-ls/conf --vardir=/home/erogr/.cache/puppet-ls/var" },
+        -- cmd = { vim.fn.stdpath("data") .. "/mason/bin/puppet-languageserver", "--stdio", "--debug=/tmp/ls-puppet.log", "--puppet-settings=--confdir=/home/erogr/.cache/puppet-ls/conf --vardir=/home/erogr/.cache/puppet-ls/var" },
+        -- cmd = { "/home/erogr/.local/share/nvim/mason/bin/puppet-languageserver", "--stdio", "--debug=/tmp/ls-puppet.log" },
+        -- cmd = { "/home/erogr/bin/puppet-languageserver", "--stdio", "--debug=/tmp/ls-puppet.log" },
+        cmd = { "/opt/puppetlabs/puppet/bin/puppet-languageserver", "--stdio", "--debug=/tmp/ls-puppet.log" },
+        filetypes = { "puppet" },
+        root_markers = {
+          'manifests',
+          '.puppet-lint.rc',
+          'hiera.yaml',
+          '.git',
+        },
+        settings = {
+          puppet = {
+            telemetry = { enabled = false },
+            -- puppet = "/usr/bin/puppet",
+            -- facter = "/usr/bin/facter",
+            -- puppet = nil,
+            -- facter = nil,
+          },
+        },
+      },
+    },
+  },
+}
